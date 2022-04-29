@@ -5,8 +5,10 @@ import './App.css'
 
 
 function App() {
+  // const[suggestedNames,setSuggestedNames]=useState([]);
   const[getPokemons,setPokemons] = useState([])
   const [showPokemons, setShowPokemons] = useState('https://pokeapi.co/api/v2/pokemon?limit=20')
+  
 
    const getres = async () => {
     const result = await fetch(showPokemons)
@@ -29,15 +31,15 @@ function App() {
     getres();
    },[])
  
-   handleInputChange=(inputText)=>{
-    //name(inputText);
-    return [];
-    };
+  //  const handleInputChange=(inputText)=>{
+  //   //name(inputText);
+  //   setSuggestedNames:inputText ? name(inputText) : [];
+  //   };
   return (
 
     <div className="App">
-      <h1 class="heading">Pokedex</h1>
-      <Search handleInputChange={this.handleInputChange} />
+      <h1 className="heading">Pokedex</h1>
+      <Search  />
       <div className="pokemon-container">
         <div className="all-container">
           {getPokemons.map( (pokemonStats, index) => 

@@ -3,7 +3,7 @@ import './Display.css';
 
 
 const Display = ({id, image, name, type, _callback }) => {
-    const style = type + " Display";
+    
     return (
         <div className="box">
             <div className="num"><h3>{id}</h3></div>

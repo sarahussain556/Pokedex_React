@@ -13,6 +13,7 @@
 .box:hover{
   background: #485079;
   box-shadow: 0 0 5px rgba(255,255,255,0.2);
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .pokedetails{
   align-items: center;

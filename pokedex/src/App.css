@@ -1,0 +1,30 @@
+.App{
+    background: hsl(246, 57%, 15%);
+    overflow-x : hidden;
+    color: rgb(222, 233, 247);
+    font-family: 'Lato', sans-serif;
+}
+.heading{
+  font-size: 50px;
+    font-family: 'Hachi Maru Pop',cursive;
+    margin: 10px 0 15px 0;
+    transition : font-size 1s;
+    margin-left: 500px;
+    margin-bottom: 50px;
+}
+.heading:hover{
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: whitesmoke;
+}
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,5 +1,7 @@
 import {useEffect, useState} from "react";
 import Display from "./components/displayPokemon/Display";
+import Search from "./components/Searchbox/Search"
+import './App.css'
 
 
 function App() {
@@ -27,10 +29,15 @@ function App() {
     getres();
    },[])
  
+   handleInputChange=(inputText)=>{
+    //name(inputText);
+    return [];
+    };
   return (
 
     <div className="App">
-      <h1>Pokedex</h1>
+      <h1 class="heading">Pokedex</h1>
+      <Search handleInputChange={this.handleInputChange} />
       <div className="pokemon-container">
         <div className="all-container">
           {getPokemons.map( (pokemonStats, index) => 
@@ -43,7 +50,7 @@ function App() {
             />)}
           
         </div>
-          {/* <button className="load-more" onClick={() => getAllPokemons()}>Load more</button> */}
+
       </div>
     </div>
   );
